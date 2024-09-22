@@ -1,0 +1,89 @@
+{
+	"name": "Lava Soldier",
+	"source": "Homebrew",
+	"page": 0,
+	"size": [
+		"M"
+	],
+	"type": "construct",
+	"alignment": [
+		"U"
+	],
+	"ac": [
+		13
+	],
+	"hp": {
+		"formula": "16d8",
+		"average": 72
+	},
+	"speed": {
+		"walk": 30
+	},
+	"str": 21,
+	"dex": 9,
+	"con": 10,
+	"int": 7,
+	"wis": 12,
+	"cha": 7,
+	"skill": {
+		"perception": "+3"
+	},
+	"passive": 13,
+	"resist": [
+		{
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"note": "from nonmagical attacks"
+		}
+	],
+	"immune": [
+		"fire"
+	],
+	"vulnerable": [
+		"cold"
+	],
+	"conditionImmune": [
+		"charmed",
+		"exhaustion",
+		"frightened"
+	],
+	"cr": "2",
+	"trait": [
+		{
+			"name": "Heavy Blows",
+			"entries": [
+				"Creatures struck by two slam attacks from a lava soldier in the same round must make a {@dc 13} Strength save or be knocked {@condition prone}."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Multiattack",
+			"entries": [
+				"The lava soldier makes two slam attacks."
+			]
+		},
+		{
+			"name": "Slam",
+			"entries": [
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) cold damage."
+			]
+		}
+	],
+	"tokenUrl": "https://raw.githubusercontent.com/lojuje/dnd-homebrew/master/images/token_lava_soldier.png",
+	"actionTags": [
+		"Multiattack"
+	],
+	"damageTags": [
+		"C"
+	],
+	"miscTags": [
+		"MW"
+	],
+	"conditionInflict": [
+		"prone"
+	]
+}
